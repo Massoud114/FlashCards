@@ -1,17 +1,18 @@
-.quiz-area {
-    background-image: url("https://stepik.org/media/attachments/lesson/374893/world.png");
-    background-color: rgb(255, 255, 255);
-    background-size: cover;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Poppins&display=swap');
+body{
+    background-color: #083d77;
+    background-repeat: no-repeat; 
 }
 
 .title {
     text-align: center;
-    font-family: Arial, sans-serif;
-    color: darkcyan;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #fe6847;
 }
 
 .cards {
-    font-family: Impact, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 50px auto auto;
     display: grid;
     grid-template-rows: auto auto auto;
@@ -20,43 +21,47 @@
     justify-content: center;
     perspective: 2000px;
 }
-.card{
+
+.card {
     position: relative;
     height: 120px;
     width: 130px;
     transition: all 1s linear;
     transform-style: preserve-3d;
 }
-.front, .back {
+
+.front,
+.back {
     width: 110px;
     height: 110px;
     text-align: center;
     border-radius: 10px;
     margin: 10px;
-    line-height: 60px;
+    line-height: 70px;
     position: absolute;
 }
-.front{
-    background-color: rgb(249, 239, 229);
+
+.front {
+    background-color: #fcba04;
     z-index: 2;
     backface-visibility: hidden;
 }
 
-.back{
-    background-color: #FD9A3E;
+.back {
+    background-color: #dd1c1a;
     z-index: 1;
     transform: rotateY(180deg);
 }
 
 .front p {
-    color: #FD9A3E;
-    letter-spacing: 2px;
-}
-.back p {
-    color:  rgb(249, 239, 229);
+    color: #dd1c1a;
     letter-spacing: 2px;
 }
 
-.card:hover{
+.back p {
+    color: #fcba04;
+}
+
+.card:hover {
     transform: rotateY(180deg);
 }
