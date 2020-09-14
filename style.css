@@ -15,8 +15,8 @@ body{
     font-family: 'Poppins', sans-serif;
     margin: 50px auto auto;
     display: grid;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: 120px 120px 120px;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: 120px 120px 120px 120px 120px;
     justify-items: center;
     justify-content: center;
     perspective: 2000px;
@@ -55,7 +55,7 @@ body{
 
 .front p {
     color: #dd1c1a;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
 }
 
 .back p {
